@@ -151,6 +151,10 @@ section {
     border-color: #000;
 }
 
+#logout-btn a:hover {
+    color: #ff7300;
+}
+
 /******************************* list of casino's ************************************************/
 .casino {
     border: 1px solid #000;
@@ -173,6 +177,14 @@ section {
     margin: 15% auto;
     padding: 10%;
     color: #fff;
+}
+
+@media (min-width: 320px) and (max-width: 1024px) {
+    .scan {
+        width: 82%;
+        padding: 5%;
+        height: 25%;
+    }
 }
 
 .barcode {
