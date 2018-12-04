@@ -33,7 +33,6 @@ nav.sidebar,
 .main {
     padding: 10px 10px 0 10px;
     overflow-y: scroll;
-    height: 100%;
 }
 
 @media (min-width: 768px) {
@@ -155,6 +154,21 @@ section {
     color: #ff7300;
 }
 
+.navbar-toggle {
+    margin-left: 8px;
+}
+
+@media (min-width: 768px) {
+    nav.sidebar {
+        margin-left: 0;
+    }
+
+    .main {
+        margin-left: 202px;
+        width: calc(100% - 205px);
+    }
+}
+
 /******************************* list of casino's ************************************************/
 .casino {
     border: 1px solid #000;
@@ -179,15 +193,8 @@ section {
     color: #fff;
 }
 
-@media (min-width: 320px) and (max-width: 1024px) {
-    .scan {
-        width: 82%;
-        padding: 5%;
-        height: 25%;
-    }
-}
-
 .barcode {
+    padding: 10px;
     background-color: rgba(0, 0, 0, 0.85);
     height: 80%;
     width: 56%;
@@ -195,6 +202,48 @@ section {
     color: #fff;
 }
 
+@media (min-width: 320px) and (max-width: 1024px) {
+    .barcode {
+        width: 330px;
+        height: 270px;
+    }
+
+    .scan {
+        width: 82%;
+        padding: 5%;
+        height: 25%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 768px) {
+    .barcode {
+        margin-right: 15%;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1024px) {
+    .barcode {
+        margin-right: 6%;
+        width: 690px;
+        height: 500px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 320px) {
+    .barcode {
+        width: 300px;
+        height: 250px;
+    }
+}
+
 .barcode img {
     padding: 3% 21%;
+    width: 100%;
+}
+
+@media (max-width: 768px) and (min-width: 768px) {
+        
+    .main {
+        margin-left: 180px;
+    }
 }
